@@ -5,6 +5,8 @@
     "module": "es2015",
     "types": []
   },
+  "resolveJsonModule": true,
+  "esModuleInterop": true,
   "exclude": [
     "src/test.ts",
     "**/*.spec.ts"

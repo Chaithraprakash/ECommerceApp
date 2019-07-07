@@ -1,0 +1,50 @@
+{
+  "menwear": [
+    {
+      "item_id": 1,
+      "item_name": "Printed Men Round Neck Shirt",
+      "item_brand": "Tommy Hilfiger",
+      "item_image": "Men1.jpeg",
+      "item_price": "1000",
+      "item_size": "L,S",
+      "item_description": "Half Sleeve, Cotton Blend"
+    },
+    {
+      "item_id": 2,
+      "item_name": "Sports Men Polo Neck Blue T-Shirt",
+      "item_brand": "Arrow",
+      "item_image": "Men2.jpeg",
+      "item_price": "2000",
+      "item_size": "L,S,M",
+      "item_description": "Full Sleeve, Polycotton"
+    },
+    {
+        "item_id": 3,
+      "item_name": "Solid Round Neck T Shirt",
+      "item_brand": "Perfomax",
+      "item_image": "Men3.jpeg",
+      "item_price": "3000",
+      "item_size": "L,M,S,XL,XS",
+      "item_description": "Half Sleeve, Cotton Blend"
+    },
+    {
+        "item_id": 4,
+      "item_name": "Sports Men Polo Neck Blue T-Shirt",
+      "item_brand": "Nike",
+      "item_image": "Men4.jpeg",
+      "item_price": "500",
+      "item_size": "L,M,S,XL,XS",
+      "item_description": "Half Sleeve, Polyster"
+    },
+    {
+        "item_id": 5,
+      "item_name": "Printed Men Round Neck Black T-Shirt",
+      "item_brand": "Adidas",
+      "item_image": "Men5.jpeg",
+      "item_price": "944",
+      "item_size": "L,M,S,XL,XS",
+      "item_description": "Half Sleeve, Cotton Blend"
+    }
+
+  ]
+}

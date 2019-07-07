@@ -1,0 +1,14 @@
+.navbar-brand img{
+    width: 50px !important;
+    height: 50px !important;      
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;    
+}
+
+.bg-light {
+    background: #FFA500 !important;
+}
+

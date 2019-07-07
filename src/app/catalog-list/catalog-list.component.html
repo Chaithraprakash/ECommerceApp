@@ -1,0 +1,80 @@
+<div class="container wrapper">
+<div class="row">
+  <div class="col">    
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active">Features</li>
+      </ol>    
+  </div>
+</div>
+<div class="row alignSearch">
+  <div class="col">
+      <form class="form-inline">
+      <input class="form-control " type="search" placeholder="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</div>
+<div class="row">
+    <div class="col-md-4 leftNavColor">
+      <h5 class="filterheader">Filter By Color</h5>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Red</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="">White</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="">Blue</label>
+              </div> 
+              <div class="moveRight">
+              <h5 class="filterheader">Filter By Size</h5>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Large</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="">Medium</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" value="">Small</label>
+              </div> 
+            </div>
+    </div>
+    <div class="col-md-8">
+      <div class="row">        
+      <ng-container *ngFor="let item of menWearList; let i = index">
+          <div class="col-md-4">
+        <div class="card" (click)="openModal(i)">          
+            <img src="../../assets/images/Men/{{item.item_image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{item.item_name}}</h5>
+              <h6 class="card-item">Rs {{item.item_price}}</h6>
+            </div>          
+          </div> 
+        </div>
+         </ng-container>      
+      </div>
+      </div>
+  </div> 
+
+  
+  <!-- Modal -->
+  <div class="backdrop" [ngStyle]="{'display': display}"></div>
+  <div class="modal" id="exampleModal" tabindex="-1" role="dialog" [ngStyle]="{'display': display}">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{modalList.name}}</h5>    
+          <a class="close" (click)="closeModal()">&times;</a>                
+        </div>
+        <div class="modal-body">
+            <img src="../../assets/images/Men/{{modalList.image}}" class="modal-image" alt="...">          
+         <span class="modal_labels"> Price </span>: Rs {{modalList.price}}<br>
+         <span class="modal_labels"> Brand </span>: {{modalList.brand}}<br>
+        <span class="modal_labels"> Size </span>: {{modalList.size}}<br>
+        <span class="modal_labels">Description</span> : {{modalList.description}}
+        </div>       
+      </div>
+    </div>
+  </div>
+</div>
