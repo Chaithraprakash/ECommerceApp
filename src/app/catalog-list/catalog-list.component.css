@@ -3,12 +3,16 @@
 }
 
  .leftNavColor {
-    background: #e3f2fd !important
+    background: #9EC6FF !important;
+    border-radius: 10px;
 } 
 
 .form-control {
+    
     margin-right: 5px !important;
 }
+
+
 
 .wrapper {
     padding-top: 85px;
@@ -17,6 +21,7 @@
 .filterheader {
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .alignSearch {
@@ -25,11 +30,14 @@
 
 .card {
     margin-bottom:10px;
+    border-radius: 10px;
+    border-width: 2px;
 }
 
 .card-img-top {
     height: 250px;
     object-fit: contain;
+    padding-top: 5px;    
     }
 
 .backdrop {
@@ -58,6 +66,15 @@
 .close{
     font-size: 30px;
     cursor: pointer;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+.btnsearch {
+    border: none;
+    background: transparent;
 }
 
 
